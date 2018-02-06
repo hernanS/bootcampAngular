@@ -144,7 +144,7 @@ module.exports = ""
 /***/ 610:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n  Welcome to {{title}} by {{author}}\n</h1>\n"
+module.exports = "<h1>\n  Welcome to {{title}} by {{author}}\n</h1>\n<h1>\n  I CAN\n</h1>\n"
 
 /***/ }),
 
