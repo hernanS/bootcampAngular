@@ -1,0 +1,5 @@
+counter: {{counter}}
+<br>
+<input type="number" [(ngModel)] = "cont">
+<br>
+<app-dummy [cont]="cont" (emmiter)="calculate($event)"></app-dummy>

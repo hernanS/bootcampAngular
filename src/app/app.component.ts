@@ -15,16 +15,18 @@ export class AppComponent {
   imagePath = "https://static.pexels.com/photos/34950/pexels-photo.jpg";
   baseUrl: 'https://api.adorable.io/avatars/500/';
   urlSuffix: '@adorable.io.png';
-  
-  generateRandomFace(num) {
-    this.imageUrl = `${this.baseUrl}${num}${this.urlSuffix}`;
-  }
+  num;
   constructor(){
-    setInterval(function(){
-      let num = Math.random();
-      let o = this.generateRandomFace(num);
+    setInterval( () =>{
+      this.num = Math.floor(Math.random() + 1);
+      this.generateRandomFace(this.num);
     }, 1000);
   }
 
+  generateRandomFace(num) {
+    console.log('jjj', num);
+    
+    this.imageUrl = `${this.baseUrl}${num}${this.urlSuffix}`;
+  }
  
 }
