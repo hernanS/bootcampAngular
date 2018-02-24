@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'My application';
   author = 'StevenSanz';
   count = 0;
-  imageSource = './../favicon.ico';
+  imgSource = './../favicon.ico';
   status = false;
   changeStatus(){
     this.status = !this.status;
